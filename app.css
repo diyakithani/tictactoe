@@ -1,0 +1,28 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #589e78;
+}
+.game-board{
+    height:70vh;
+    width:70vh;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.button{
+    width:18vh;
+    height:18vh;
+    display:flex;
+    flex-wrap: wrap;
+    margin:0.5vh;
+    border-radius: 20%;
+    background-color:#B8E0D2;
+
+}
+.button:hover{
+    background-color: #10ca92;
+    cursor: pointer;
+}
