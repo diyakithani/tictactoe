@@ -9,5 +9,14 @@ const winningcombinations = [
   [2, 4, 6],
 ];
 var chosenoptions = ["", "", "", "", "", "", "", "", ""];
-var currentparticipant = "X";
+var currentplayer = "X";
 var runninggame = true;
+
+function buttonclicked() {
+  if (currentplayer == "X") {
+    selectedbutton.innnerHTML = "X";
+  } else {
+    selectedbutton.innnerHTML = "O";
+  }
+  currentplayer = currentplayer === "X" ? "O" : "X";
+}
