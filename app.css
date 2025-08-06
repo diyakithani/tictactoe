@@ -16,11 +16,15 @@ body{
     width:18vh;
     height:18vh;
     display:flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     margin:0.5vh;
     border-radius: 20%;
     background-color:#B8E0D2;
-
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    border: none;
+    text-align: center;
 }
 .button:hover{
     background-color: #10ca92;
