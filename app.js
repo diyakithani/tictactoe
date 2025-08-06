@@ -12,11 +12,23 @@ var chosenoptions = ["", "", "", "", "", "", "", "", ""];
 var currentplayer = "X";
 var runninggame = true;
 
-function buttonclicked() {
+for (let button of document.querySelectorAll(".button")) {
+  var selectedbutton;
+  button.addEventListener("click", () => {
+    if (runninggame && button.innerHTML === "") {
+      selectedbutton = button.id;
+      buttonclicked(selectedbutton);
+    }
+  });
+}
+
+function buttonclicked(selectedbutton) {
   if (currentplayer == "X") {
-    selectedbutton.innnerHTML = "X";
+    document.getElementById(selectedbutton).innerHTML = "X";
   } else {
-    selectedbutton.innnerHTML = "O";
+    document.getElementById(selectedbutton).innerHTML = "O";
   }
   currentplayer = currentplayer === "X" ? "O" : "X";
+  chosenoptions[selectedbutton] = currentplayer;
+  checkwinner();
 }
