@@ -28,13 +28,24 @@ function buttonclicked(selectedbutton) {
   } else {
     document.getElementById(selectedbutton).innerHTML = "O";
   }
-  currentplayer = currentplayer === "X" ? "O" : "X";
   chosenoptions[selectedbutton] = currentplayer;
-  checkwinner();
+  console.log(chosenoptions);
+  checkwinner(currentplayer);
+  currentplayer = currentplayer === "X" ? "O" : "X";
 }
 
-function checkwinner(){
-    if(runninggame){
-        for
+function checkwinner(currentplayer) {
+  if (runninggame) {
+    for (let combination of winningcombinations) {
+      if (
+        chosenoptions[combination[0]] === currentplayer &&
+        chosenoptions[combination[1]] === currentplayer &&
+        chosenoptions[combination[2]] === currentplayer
+      ) {
+        runninggame = false;
+        alert(currentplayer + " wins!");
+        return;
+      }
     }
+  }
 }
