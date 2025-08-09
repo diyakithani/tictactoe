@@ -43,9 +43,14 @@ function checkwinner(currentplayer) {
         chosenoptions[combination[2]] === currentplayer
       ) {
         runninggame = false;
-        alert(currentplayer + " wins!");
+
+        endGame(currentplayer);
         return;
       }
     }
   }
+}
+function endGame(currentplayer) {
+  runninggame = false;
+  console.log(currentplayer + " wins!");
 }
