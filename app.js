@@ -55,3 +55,13 @@ function endGame(currentplayer) {
   console.log(currentplayer + " wins!");
   document.querySelector(".scoreboard").innerHTML = currentplayer + " wins!";
 }
+
+function NewGame() {
+  chosenoptions = ["", "", "", "", "", "", "", "", ""];
+  currentplayer = "X";
+  runninggame = true;
+  document.querySelector(".scoreboard").innerHTML = "";
+  for (let button of document.querySelectorAll(".button")) {
+    button.innerHTML = "";
+  }
+}
