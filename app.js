@@ -53,4 +53,5 @@ function checkwinner(currentplayer) {
 function endGame(currentplayer) {
   runninggame = false;
   console.log(currentplayer + " wins!");
+  document.querySelector(".scoreboard").innerHTML = currentplayer + " wins!";
 }
