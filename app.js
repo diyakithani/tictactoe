@@ -32,3 +32,9 @@ function buttonclicked(selectedbutton) {
   chosenoptions[selectedbutton] = currentplayer;
   checkwinner();
 }
+
+function checkwinner(){
+    if(runninggame){
+        for
+    }
+}
