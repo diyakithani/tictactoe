@@ -64,4 +64,5 @@ body{
     font-size: 2vh;
     cursor: pointer;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    margin: 1vh 0;
 }
