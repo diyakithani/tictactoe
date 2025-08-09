@@ -32,3 +32,26 @@ body{
     background-color: #10ca92;
     cursor: pointer;
 }
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Adds good space between all child elements */
+    height: 100%;
+    width: 100%;
+    
+}
+.scoreboard{
+    width: 20vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #B8E0D2;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vh;
+}
