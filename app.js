@@ -12,6 +12,8 @@ var chosenoptions = ["", "", "", "", "", "", "", "", ""];
 var currentplayer = "X";
 var runninggame = true;
 
+document.querySelector(".scoreboard").innerHTML = currentplayer + "'s turn ";
+
 for (let button of document.querySelectorAll(".button")) {
   var selectedbutton;
   button.addEventListener("click", () => {
