@@ -34,6 +34,7 @@ function buttonclicked(selectedbutton) {
   console.log(chosenoptions);
   checkwinner(currentplayer);
   currentplayer = currentplayer === "X" ? "O" : "X";
+  document.querySelector(".scoreboard").innerHTML = currentplayer + "'s turn ";
 }
 
 function checkwinner(currentplayer) {
