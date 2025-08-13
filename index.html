@@ -8,6 +8,15 @@
     <script src="app.js" defer></script>
 </head>
 <body>
+
+<section class="entry-page">
+    <h2>Choose Game Mode</h2>
+    <div class="game-mode-options">
+        <button id="play-friend" onclick="startGame('friend')">Play with Friend</button>
+        <button id="play-computer" onclick="startGame('computer')">Play with Computer</button>
+    </div>
+</section>
+<section class="game-page" style="display: none;">
     <h1>TIC TAC TOE</h1>
     <div class="container">
         <div class="scoreboard">
@@ -32,6 +41,7 @@
         <button id="new-game-button" onclick="NewGame()">New Game</button>
     </div>
     </div>
+</section>
     
 
 </body>
