@@ -12,24 +12,28 @@ body{
     flex-wrap: wrap;
 
 }
-.button{
-    width:18vh;
-    height:18vh;
-    display:flex;
+.button {
+    width: 18vh;
+    height: 18vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin:0.5vh;
+    margin: 0.5vh;
     border-radius: 20%;
-    background-color:#B8E0D2;
+    background: linear-gradient(135deg, #10ca92 0%, #B8E0D2 100%);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
     border: none;
     text-align: center;
-    font-size: 5vh;
+    font-size: 3vh;
     font-weight: bold;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
 }
-.button:hover{
-    background-color: #10ca92;
+}
     cursor: pointer;
 }
 .container{
