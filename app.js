@@ -31,10 +31,8 @@ function buttonclicked(selectedbutton) {
     document.getElementById(selectedbutton).innerHTML = "O";
   }
   chosenoptions[selectedbutton] = currentplayer;
-  console.log(chosenoptions);
   checkwinner(currentplayer);
   currentplayer = currentplayer === "X" ? "O" : "X";
-  document.querySelector(".scoreboard").innerHTML = currentplayer + "'s turn ";
 }
 
 function checkwinner(currentplayer) {
@@ -45,10 +43,18 @@ function checkwinner(currentplayer) {
         chosenoptions[combination[1]] === currentplayer &&
         chosenoptions[combination[2]] === currentplayer
       ) {
+        document.querySelector(".scoreboard").innerHTML =
+          currentplayer + " Wins!";
         runninggame = false;
 
         endGame(currentplayer);
         return;
+      } else {
+        if (currentplayer === "X") {
+          document.querySelector(".scoreboard").innerHTML = "O's turn ";
+        } else {
+          document.querySelector(".scoreboard").innerHTML = "X's turn ";
+        }
       }
     }
   }
