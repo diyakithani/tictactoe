@@ -55,6 +55,23 @@ body{
     background: linear-gradient(90deg, #B8E0D2 0%, #10ca92 100%);
     transform: scale(1.05);
 }
+h2{
+    font-size: 5vh; /* Larger font size */
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin: 2vh 0;
+
+}
+.entry-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100vh;
+    margin: 0; /* Remove margin so centering works */
+}
 .container{
     display: flex;
     flex-direction: row;
