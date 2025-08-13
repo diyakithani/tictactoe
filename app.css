@@ -50,6 +50,7 @@ body{
     color: #222;
     cursor: pointer;
     margin: 2vh 0; /* Larger margin */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .entry-button:hover{
     background: linear-gradient(90deg, #B8E0D2 0%, #10ca92 100%);
@@ -61,6 +62,7 @@ h2{
     color: #222;
     text-align: center;
     margin: 2vh 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 .entry-page{
