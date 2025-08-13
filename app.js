@@ -8,6 +8,22 @@ const winningcombinations = [
   [0, 4, 8],
   [2, 4, 6],
 ];
+
+function startGame(mode) {
+  // Hide entry page
+  document.querySelector(".entry-page").style.display = "none";
+
+  // Show game page
+  document.querySelector(".game-page").style.display = "block";
+
+  // Optional: store game mode somewhere
+  if (mode === "friend") {
+    console.log("Playing with a friend!");
+  } else if (mode === "computer") {
+    console.log("Playing with the computer!");
+  }
+}
+
 var chosenoptions = ["", "", "", "", "", "", "", "", ""];
 var currentplayer = "X";
 var runninggame = true;

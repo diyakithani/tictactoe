@@ -13,26 +13,25 @@ body{
 
 }
 .button {
-    width: 50%;
-    height: 5vh;
+    width: 18vh;
+    height: 18vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #10ca92 0%, #B8E0D2 100%);
+    margin: 0.5vh;
+    border-radius: 20%;
+    background: linear-gradient(135deg, #10ca92 0%, #B8E0D2 100%);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
     border: none;
     text-align: center;
-    font-size: 2vh;
+    font-size: 3vh;
     font-weight: bold;
-    padding: 0 2vh;
+    padding: 0;
     box-sizing: border-box;
     color: #222;
     cursor: pointer;
-    margin: 1vh 0;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .container{
     display: flex;
@@ -43,6 +42,14 @@ body{
     height: 100%;
     width: 100%;
     
+
+}
+.entry-page{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
 .scoreboard{
     width: 20vh;
