@@ -13,27 +13,26 @@ body{
 
 }
 .button {
-    width: 18vh;
-    height: 18vh;
+    width: 50%;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5vh;
-    border-radius: 20%;
-    background: linear-gradient(135deg, #10ca92 0%, #B8E0D2 100%);
+    border-radius: 10px;
+    background: linear-gradient(90deg, #10ca92 0%, #B8E0D2 100%);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
     border: none;
     text-align: center;
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: bold;
-    padding: 0;
+    padding: 0 2vh;
     box-sizing: border-box;
     color: #222;
     cursor: pointer;
-    
-}
-}
-    cursor: pointer;
+    margin: 1vh 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .container{
     display: flex;
