@@ -69,7 +69,7 @@ function NewGame() {
   chosenoptions = ["", "", "", "", "", "", "", "", ""];
   currentplayer = "X";
   runninggame = true;
-  document.querySelector(".scoreboard").innerHTML = "";
+  document.querySelector(".scoreboard").innerHTML = currentplayer + "'s turn ";
   for (let button of document.querySelectorAll(".button")) {
     button.innerHTML = "";
   }
